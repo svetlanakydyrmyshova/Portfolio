@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+< lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,8 +7,8 @@
     <title>Светлана Кыдырмышова</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <!-- header -->
+  <>
+  
     <header class="header">
       <div class="container">
         <nav class="header-nav">
@@ -18,123 +18,144 @@
               <a href="#home" class="header-menu-link">О себе</a>
             </li>
             <li class="header-menu-item">
+              <a href="#contacts" class="header-menu-link">Контакты</a>
+            </li>
+            <li class="header-menu-item">
               <a href="#skills" class="header-menu-link">Навыки</a>
             </li>
             <li class="header-menu-item">
               <a href="#code" class="header-menu-link">Примеры кода</a>
             </li>
-
             <li class="header-menu-item">
-              <a href="#education" class="header-menu-link">Образование</a>
+              <a href="#portfolio" class="header-menu-link">Портфолио</a>
             </li>
             <li class="header-menu-item">
-              <a href="#languages" class="header-menu-link" Языки></a>
+              <a href="#languages" class="header-menu-link">Языки</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#education" class="header-menu-link">Образование</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <img src="img/20211111_173729.jpg" width="100" alt="Мое фото" />
-    <h2>Светлана Кыдырмышова</h2>
-    <h2>Контакты</h2>
-    <ul>
-      <li>
-        <h4>Мое местоположение</h4>
-        <p>Москва Россия</p>
-      </li>
-      <li>
-        <h4>Мой номер телефона</h4>
-        <a href="tel:+7780670770">+7-780-67-07-70</a>
-      </li>
-      <li>
-        <h4>Мой электронный адрес</h4>
-        <a href="mailto:sabdrahmanova75@gmail.com">sabdrahmanova75@gmail.com</a>
-      </li>
-    </ul>
-
     <main>
-      <section id="about">
-        <h2>Краткая информация о себе</h2>
-        <p>
-          Моя ближайшая цель- успешно окончить курс HTML и Css, потом изучить
+      <section class="intro">
+        <div class="container">
+          <div class="intro-inner">
+            <img
+              class="intro-img"
+              src="img/20211111_173729.jpg"
+              width="100"
+              alt="Svetlana"
+            />
+            <div class="intro-right">
+              <h1>Светлана Кыдырмышова</h1>
+              <h3>Front-end Developer</h3>
+              <p>
+                Моя ближайшая цель- успешно окончить курс HTML и Css, потом изучить
           язык Javascript.
-        </p>
-        <p>
           Следующая моя цель-стать программистом,улучшить качество своей жизни и
           внести вклад в развитии Кыргызстана.
-        </p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <h2>Мои личные качества</h2>
+      <section class="contacts">
+        <div class="container">
+          <h2  id="contacts" class="section-title">
+              Контакты</h2>
+              <ul>
+                <li>
+                  <h4>Location</h4>
+                  <p>Moscow, Russian Federation</p>
+                </li>
+                <li>
+                  <h4>Phone</h4>
+                  <a href="tel:+79505050505">
+                    +7 950 505 05 05
+                  </a>
+                </li>
+                <li>
+                  <h4>Email</h4>
+                  <a href="mailto:svetlana.kydyrmyshova.kk@gmail.com">svetlana.kydyrmyshova.kk@gmail.com</a>
+                </li>
+              </ul>
+        </div>
+      </section>
+      <section id="skills" class="skills section">
+        <div class="container">
+          <h2 class="section-title">Навыки</h2>
         <ul>
-          <li>целеустремленная</li>
-          <li>пунктуальная</li>
-          <li>внимательная</li>
-          <li>гибкая</li>
-          <li>честная</li>
-          <li>ответственная</li>
-          <li>чистоплотная</li>
-          <li>постоянное желание обучаться и узнавать новое</li>
+         <li>HTML</li>
+         <li>CSS</li>
+         <li>JavaScript</li>
+         <li>Saas</li>
+         <li>GitHub</li>
+         <li>AutoCad</li>
         </ul>
+        </div>
       </section>
+      <section id="code" class="code-example section">
+        <div class="container">
+          <h2 class="section-title">Примеры кода</h2>
+          <p><b>Task:</b> Function of JavaScript</p>
 
-      <section id="skills">
-        <h2>Навыки</h2>
-        <ul>
-          <li>HTML</li>
-          <li>VS CODE</li>
-        </ul>
+
+          <pre>
+            <code>
+              function lesson (10, 20) {
+                return 10 * 20;
+              }
+
+              console.log (function(lesson));
+            </code>
+          </pre>
+        </div>
       </section>
+      <section id="portfolio" class="portfolio section">
+        <div class="container">
+          <h2 class="portfolio">Портфолио</h2>
+        <div class="grid-form">
+          <div class="form rad">
+            <h3>Forms</h3>
+            <img class="form-img" src="img/img/people-shaking-hands_600x600.webp" alt="Forms">
+          </div>
+          <div class="links rad">
+            <h3>Links</h3>
+            <img class="form-img" src="img/img/professional-photography-portfolio-image2_600x600.webp" alt="links">
+          </div>
+          <div class="lists rad">
+            <h3>Lists</h3>
+              <img class="form-img" src="img/img/professional-photography-portfolio-image3_600x600.webp" alt="lists">
+          </div>
+        </div>
+        </div>
 
-      <section id="code">
-        <h2>Примеры кода</h2>
-        <pre>
-          <code>
-            &lt;ul&gt;
-              &lt;li&gt;
-                &lt;h4&gt;Мое местоположение&lt;/h4&gt;
-                &lt;p&gt;Москва Россия&lt;/p&gt;
-              &lt;/li&gt;
-              &lt;li&gt;
-              &lt;h4&gt;Мой номер телефона&lt;/h4&gt;
-                &lt;a href="tel:+7780670770"&gt;+7-780-67-07-70&lt;/a&gt;
-              &lt;/li&gt;
-              &lt;li&gt;
-                &lt;h4&gt;Мой электронный адрес&lt;/h4&gt;
-                &lt;a href="mailto:sabdrahmanova75@gmail.com"&gt;sabdrahmanova75@gmail.com&lt;/a&gt;
-              &lt;/li&gt;
-            &lt;/ul&gt;
-          </code>
-        </pre>
       </section>
-
-      <section id="experinse">
-        <h2>Опыт работы</h2>
-        <ul>
-          <li>Студентка "Jyldyz Academy"</li>
-          <li>Менеджер проекта "Устат"</li>
-        </ul>
+      <section id="languages" class="languages">
+        <div class="languages-section">
+          <h2 class="portfolio">Языки</h2>
+          <ul class="languages-ul">
+           <li><b>English</b> - elementary</li>
+           <li><b>Russian</b> - perfection</li>
+           <li><b>Kyrgyz</b> - native language</li>
+          </ul>
+        </div>
       </section>
-
-      <section id="edication">
-        <h2>Образование</h2>
-        <ol>
-          <li>Каракольское медицинское училище по специальности акушерка</li>
-          <li>ИГУ им К.Тыныстанова по специальности экономист</li>
-          <li>Курс программирования Jyldyzacademy</li>
-          <li>Проект "Чойро"</li>
-        </ol>
-      </section>
-
-      <section id="english">
-        <h2>Английский язык</h2>
-        <p>Начинающий</p>
+      <section id="Education" class="Education">
+        <div class="education-section">
+          <h2 class="portfolio">Образование</h2>
+          <ul class="education-ul">
+           <li>КМУ по специальности акушерка</li>
+            <li>ИГУ им К.Тыныстанова по специальности экономист</li>
+            <li>Курс программирования Jyldyzacademy</li>
+          </ul>
+        </div>
       </section>
     </main>
-
-    <footer>
-      2022 &copy;
-      <a href="https://linktr.ee/jyldyzacademy2020">Jyldyz Academy</a>
-    </footer>
   </body>
 </html>
