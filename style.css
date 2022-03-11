@@ -1,12 +1,12 @@
 :root {
---accent: #174180;
---accent-light: #3764a7;
---pure-white: #fff;
+  --accent: #174180;
+  --accent-light: #3764a7;
+  --pure-white: #fff;
 }
 
 html {
-box-sizing:border-box;
-scroll-behavior: smooth;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -17,16 +17,14 @@ scroll-behavior: smooth;
 
 body {
   margin: 0;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   color: var(--accent, #174180);
 }
 
 .container {
   width: 1140px;
- margin: 0 auto;
- padding: 0 15px;
-
-
+  margin: 0 auto;
+  padding: 0 15px;
 }
 .header {
   background-color: var(--accent, #174180);
@@ -38,11 +36,10 @@ body {
 }
 
 .header-nav {
-   display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 11px 0;
-
 }
 
 .header-logo {
@@ -51,7 +48,6 @@ body {
   line-height: 30px;
   font-weight: 100;
   letter-spacing: 3px;
- 
 }
 .header-logo img {
   width: 100%;
@@ -62,17 +58,211 @@ body {
 .header-menu {
   width: 78%;
   display: flex;
-    margin: 0;
+  margin: 0;
   padding: 0;
   list-style: none;
-  
 }
 
 .header-menu-link {
   padding: 15px;
-font-size: 16px;
-line-height: 16px;
-padding: 15px 15px;
-text-transform: uppercase;
-transition:
+  font-size: 16px;
+  line-height: 16px;
+  padding: 15px 15px;
+  text-transform: uppercase;
+  transition: background-color 0, 3s;
+}
 
+.header-menu-link:hover {
+  background-color: var(--accent-light);
+}
+
+.intro {
+  padding: 60px 0;
+}
+
+.intro-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.intro-left {
+  width: 30%;
+}
+
+.intro-img {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+}
+
+.intro-right {
+  width: 60%;
+}
+
+.intro-right h1 {
+  margin: 0 0 15px;
+  color: #3764a7;
+}
+
+.intro-right h3 {
+  margin: 0 0 20px;
+  color: aqua;
+}
+
+.intro-right p {
+  color: rgb(51 51 51);
+  font-weight: bold;
+}
+
+.section-title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.contacts {
+  margin-bottom: 60px;
+}
+
+.contacts ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.contacts li {
+  font-weight: bold;
+}
+
+.contacts-img {
+  width: 20px;
+  height: 10px;
+}
+
+.skills {
+  color: var(--pure-white);
+  background-color: var(--accent);
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.skills ul {
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 20px;
+}
+
+.skills li {
+  padding: 10px 25px;
+  background-color: var(--accent-light);
+  border-radius: 3px;
+}
+
+.code-example pre {
+  width: 50%;
+  margin: 0 auto;
+  background-color: var(--accent);
+  text-align: center;
+  color: var(--pure-white);
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.code-example p {
+  font-style: italic;
+  text-align: center;
+}
+
+.code-example b {
+  font-style: normal;
+  font-weight: bolder;
+  color: black;
+}
+
+.grid-form {
+  background-color: var(--accent);
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(3, 300px);
+  grid-column-gap: 25px;
+  grid-row-gap: 15px;
+  justify-content: center;
+  text-align: center;
+  height: 400px;
+  padding: 40px;
+  border-radius: 7px;
+}
+
+.portfolio {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.rad {
+  border-radius: 7px;
+}
+
+.form {
+  background-color: var(--accent-light);
+  color: var(--pure-white);
+}
+
+.links {
+  background-color: var(--accent-light);
+  color: var(--pure-white);
+}
+
+.lists {
+  background-color: var(--accent-light);
+  color: var(--pure-white);
+}
+
+.form-img {
+  width: 300px;
+  height: 200px;
+  padding: 15px;
+}
+
+.languages-ul {
+  text-align: center;
+  background-color: var(--accent);
+  color: var(--pure-white);
+  width: 20%;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding-top: 20px;
+}
+
+.languages-section {
+  list-style: none;
+}
+
+.education-section {
+  padding: 150px;
+}
+
+.education-ul {
+  margin: 0 auto;
+  text-align: center;
+  background-color: brown;
+  width: 50%;
+  padding: 50px;
+  color: var(--pure-white);
+  border-radius: 20px;
+}
+
+.education-section li {
+  list-style: none;
+  padding: 5px;
+}
